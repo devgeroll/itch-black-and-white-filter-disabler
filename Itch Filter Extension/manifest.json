@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Itch.io Filter Remover",
+  "version": "1.0",
+  "description": "Removes any CSS filter effects from itch.io pages.",
+  "permissions": ["scripting"],
+  "host_permissions": ["*://*.itch.io/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.itch.io/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
